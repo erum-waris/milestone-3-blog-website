@@ -11,6 +11,15 @@ export default {
             type: 'text',
             validation: (Rule: RuleType) => Rule.required(),
         },
+        {
+            title: 'Slug',
+            name: 'slug',
+            type: 'slug',
+            options: {
+              source: 'title',
+              maxLength: 70,
+            }
+        },
       {
             name: 'description',
             title: 'Description',

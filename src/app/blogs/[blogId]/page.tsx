@@ -8,6 +8,7 @@ interface Blog {
   heading: string;
   description: string;
   imageUrl: string;
+  
 }
 
 const Page = async () => {
