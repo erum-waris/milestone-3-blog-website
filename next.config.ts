@@ -1,12 +1,11 @@
-import type { NextConfig } from "next";
- 
-const nextConfig: NextConfig = {
-  /* config options here */
 
-   images: {
-     domains:['cdn.sanity.io'], // Replace with your image domain
-   },
- 
+
+
+const nextConfig = {
+  reactStrictMode:false,
+  images:{
+      domains:["cdn.sanity.io"]
+  }
 };
 
-export default nextConfig
+export default nextConfig;

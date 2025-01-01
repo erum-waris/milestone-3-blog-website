@@ -1,8 +1,8 @@
 import Heading2 from "@/app/components/Heading2";
 import Heading3 from "@/app/components/Heading3";
 import { client } from "@/sanity/lib/client";
-import { urlFor } from "@/sanity/lib/image";
-import Image from "next/image";
+// import { urlFor } from "@/sanity/lib/image";
+// import Image from "next/image";
 
 interface Blog {
   heading: string;
@@ -25,10 +25,9 @@ const Page = async () => {
       
        {data.map((one:Blog,index:number) => (
           <div
-            key={index}
-            className="border rounded-lg p-4 shadow-lg flex flex-col items-center"
+            key={index} className="border rounded-lg p-4 shadow-lg flex flex-col items-center"
           >
-           <Image src={urlFor(one.imageUrl).url()} alt="blog Image" width={400} height={400}/> 
+           {/* <Image src={urlFor(one.imageUrl).url()} alt="blog Image" width={400} height={400}/>  */}
    
          
            <Heading3 text={one.heading} />
