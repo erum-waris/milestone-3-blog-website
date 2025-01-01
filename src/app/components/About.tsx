@@ -9,7 +9,7 @@ const About = () => (
       <div>
         <Heading2 text="Introduction" />
         <p className="text-white leading-relaxed text-xl md:text-2xl">
-          Welcome to our community, where we're dedicated to supporting parents
+          Welcome to our community where we are dedicated to supporting parents
           on their journey to raise happy, healthy, and well-rounded children.
           Our mission is to provide valuable resources, expert advice, and a
           safe space for parents to connect, share, and grow together.
@@ -29,7 +29,7 @@ const About = () => (
         <Heading2 text="Our Comprehensive Content" />
         <p className="text-white leading-relaxed  text-xl md:text-2xl">
           Our content is carefully crafted to support parents throughout their
-          journey, from the moment they discover they're expecting to the day
+          journey from the moment they discover they are expecting to the day
           their child spreads their wings and becomes an independent adult. We
           understand that parenting is a dynamic and ever-evolving experience,
           and our content reflects that.
@@ -127,7 +127,7 @@ const About = () => (
         </p>
       </div>
       <Heading3 text="Thank you for being part of our
-          community!" />
+          community" />
            <CommentSection />
     </div>
 

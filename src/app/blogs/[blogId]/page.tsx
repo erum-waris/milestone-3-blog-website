@@ -2,10 +2,16 @@ import Heading2 from "@/app/components/Heading2";
 import Heading3 from "@/app/components/Heading3";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 
+interface Blog {
+  heading: string;
+  description: string;
+  imageUrl: string;
+}
 
 const Page = async () => {
-  const data = await client.fetch(
+  const data:Blog[] = await client.fetch(
     `*[_type == "blog"]`,
     {},
     { cache: "no-store" }
@@ -17,12 +23,12 @@ const Page = async () => {
       <Heading2 text="Blogs" />
       <div className="grid grid-cols-1 gap-6">
       
-       {data.map((one:any,index:number) => (
+       {data.map((one:Blog,index:number) => (
           <div
             key={index}
             className="border rounded-lg p-4 shadow-lg flex flex-col items-center"
           >
-           <img src={urlFor(data.imageUrl).url()} alt="blog Image" width={400} height={400}/> 
+           <Image src={urlFor(one.imageUrl).url()} alt="blog Image" width={400} height={400}/> 
    
          
            <Heading3 text={one.heading} />

@@ -22,7 +22,7 @@ const HeroSection = () => {
     Discover the Art of Parenting
   </h1>
   <p className="text-md sm:text-ld md:text-xl lg:text-2xl text-pink-100 leading-relaxed">
-  Parents are the first teachers, shaping minds and hearts with love and wisdom". 
+  Parents are the first teachers shaping minds and hearts with love and wisdom. 
   </p>
 </div>
 
