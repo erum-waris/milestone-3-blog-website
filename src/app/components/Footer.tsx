@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-r from-pink-400 via-purple-500 to-blue-500 text-white py-10 px-5">
+        <footer className="bg-gradient-to-r from-blue-200 via-purple-500 to-pink-600 text-black py-10 px-5">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                 {/* Logo and About Section */}
                 <div>
@@ -13,13 +13,13 @@ const Footer = () => {
                         <Image
                             src="/images/parenting-logo.png" // Replace this with your actual logo path
                             alt="Parenting World Logo"
-                            width={50} // Set the width of your logo
-                            height={50} // Set the height of your logo
+                            width={100} // Set the width of your logo
+                            height={100} // Set the height of your logo
                             className="rounded-sm"
                         />
-                        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1">
                             Parenting World
-                        </h2>
+                        </h1>
                     </div>
                     <p className="text-sm md:text-base lg:text-lg">
                         Empowering parents with resources, advice, and tools to navigate the journey of raising children. Stay connected for helpful tips and support.
@@ -28,25 +28,25 @@ const Footer = () => {
 
                 {/* Quick Links */}
                 <div>
-                    <h3 className="text-md md:text-lg lg:text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul className="space-y-2">
+                    <span className="text-md md:text-lg lg:text-xl font-semibold mb-4 hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 ">Quick Links</span>
+                    <ul className="space-y-2 my-5">
                         <li>
-                            <Link href="/" className="hover:text-gray-200 transition text-sm md:text-base lg:text-lg">
+                            <Link href="/" className="hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 transition text-sm md:text-base lg:text-lg">
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" className="hover:text-gray-200 transition text-sm md:text-base lg:text-lg">
+                            <Link href="/about" className="hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 transition text-sm md:text-base lg:text-lg">
                                 About Us
                             </Link>
                         </li>
                         <li>
-                            <Link href="/blogs" className="hover:text-gray-200 transition text-sm md:text-base lg:text-lg">
+                            <Link href="/blogs" className="hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 transition text-sm md:text-base lg:text-lg">
                                 Blogs
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="hover:text-gray-200 transition text-sm md:text-base lg:text-lg">
+                            <Link href="/contact" className="hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 transition text-sm md:text-base lg:text-lg">
                                 Contact
                             </Link>
                         </li>
@@ -55,32 +55,32 @@ const Footer = () => {
 
                 {/* Social Media Icons */}
                 <div>
-                    <h3 className="text-md md:text-lg lg:text-xl font-semibold mb-4">Follow Us</h3>
-                    <div className="flex space-x-4">
+                    <span className="text-md md:text-lg lg:text-xl font-semibold mb-4 hover:text-[#ece6e8] hover:border-b hover:border-white my-5 hover:py-1">Follow Us</span>
+                    <div className="flex space-x-4 py-5">
                         <Link
                             href="#!"
-                            className="bg-white text-pink-500 rounded-full p-3 hover:bg-gray-200 transition"
+                            className="bg-white text-pink-500 rounded-full p-3 hover:bg-gray-600 hover:text-white  transition"
                             aria-label="Facebook"
                         >
                             <FaFacebookF />
                         </Link>
                         <Link
                             href="#!"
-                            className="bg-white text-blue-400 rounded-full p-3 hover:bg-gray-200 transition"
+                            className="bg-white text-blue-400 rounded-full p-3 transition  hover:bg-gray-600 hover:text-white"
                             aria-label="Twitter"
                         >
                             <FaTwitter />
                         </Link>
                         <Link
                             href="#!"
-                            className="bg-white text-pink-600 rounded-full p-3 hover:bg-gray-200 transition"
+                            className="bg-white text-pink-600 rounded-full p-3 transition  hover:bg-gray-600 hover:text-white"
                             aria-label="Instagram"
                         >
                             <FaInstagram />
                         </Link>
                         <Link
                             href="#!"
-                            className="bg-white text-blue-700 rounded-full p-3 hover:bg-gray-200 transition"
+                            className="bg-white text-blue-700 rounded-full p-3  transition  hover:bg-gray-600 hover:text-white"
                             aria-label="LinkedIn"
                         >
                             <FaLinkedinIn />
